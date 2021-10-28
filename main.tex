@@ -472,7 +472,7 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \wydzial{WYDZIAŁ ELEKTRONIKI}
 \kierunek{Automatyka i Robotyka}
 \specjalnosc{Przemysł 4.0}
-\promotor{dr inż. Mariusz Uchroński}
+\promotor{dr inż. Mariusz Uchroński, Katedra Automatyki, Mechatroniki i Systemów Sterowania}
 \date{WROCŁAW, 2021}
 
 % Ustawienie odstępu od góry w nienumerowanych rozdziałach oraz wykazach:
@@ -522,10 +522,7 @@ Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywa�
 \mbox{}\pdfbookmark[0]{Spis treści}{spisTresci.1}
 \tableofcontents* 
 
-\newpage
-\mbox{}\pdfbookmark[0]{Spis rysunków}{spisRysunkow.1}
-%\addcontentsline{toc}{chapter}{Spis rysunków}
-\listoffigures*
+
 \begin{flushleft}
 
 \end{flushleft}
@@ -536,12 +533,8 @@ Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywa�
 %}
 
 
-\newpage
-\mbox{}\pdfbookmark[0]{Spis tabel}{spisTabel.1}
-%\addcontentsline{toc}{chapter}{Spis tabel}
-\listoftables*
 
-\include{skroty} %skróty można sobie pominąć
+% \include{skroty} %skróty można sobie pominąć
 \chapterstyle{default}
 \include{rozdzial01}
 \include{rozdzial02}
@@ -549,6 +542,16 @@ Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywa�
 \include{rozdzial04}
 \include{rozdzial05}
 \include{rozdzial06}
+
+\newpage
+\mbox{}\pdfbookmark[0]{Spis rysunków}{spisRysunkow.1}
+%\addcontentsline{toc}{chapter}{Spis rysunków}
+\listoffigures*
+
+\newpage
+\mbox{}\pdfbookmark[0]{Spis tabel}{spisTabel.1}
+%\addcontentsline{toc}{chapter}{Spis tabel}
+\listoftables*
 
 %\bibliographystyle{plalpha}
 \bibliographystyle{plabbrv}
