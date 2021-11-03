@@ -1,15 +1,35 @@
 \chapter{Wstęp}
-\section{Wprowadzenie}
-Wprowadzenie do pracy
+Globalny dostęp do internetu spowodował znaczący wzrost popularności aplikacji oraz serwisów internetowych. Obecnie coraz więcej przedsiębiorstw decyduje się na implementację swoich rozwiązań w takiej postaci. Zaletą takich rozwiązań są minimalne wymagania sprzętowe użytkownika - aplikacja stoi na zewnętrznym serwerze, który komunikuje się z klientem za pośrednictwem protokołu http, zatem od użytkownika wymagane jest jedynie urządzenie z dostępem do internetu. 
 
-\section{Cel pracy}
-Cel pracy
+Zastosowanie aplikacji internetowych pozwala zatem dotrzeć z potencjalnym produktem do większej liczby konsumentów bez konieczności instalowania dodatkowego oprogramowania z każdego urzadzenia które użytkujemy na co dzień - od komputerów aż po smartfony. 
 
-\section{Zakres pracy}
-Zakres pracy
+Obecnie dużą popularnością cieszy się podejście do tworzenia tzw. Single Page Application. Podejście to sprawia że aplikacje internetowe tworzące w tym schemacie są dużo szybsze, co pozytywnie wpływa na user expirience, ponieważ w opozycji do starego podejścia pobierany jest tylko jeden plik html który na bierząco podmienia swoją zawartość z poziomu przeglądarki a nie po stronie serwera jak to miało miejsce przy starszym podejściu do tworzenia multi page application gdzie pliki html były generowane na bieżąco po stronie serwera i wysyłane do przeglądarki.
 
+\section{Cel oraz zakres pracy}
+Celem pracy jest zaprojektowanie i zaimplementowanie serwisu internetowego w oparciu o  nowoczesne technik programowania, którego zadaniem jest wspomaganie planowania wyprowadzania psów na spacer. Aplikacja skonstruowana jest w oparciu o dwie główne grupy docelowych użytkowników - właścicieli oraz opiekunów. 
+
+Zakres pracy obejmuje stworzenie aplikacji przy użyciu frameworka Spring Boot (Java) do stworzenia serwera aplikacji, oraz aplikacji dostępowej przy użyciu frameworka Angular (TypeScript). Wykorzystano MongoDB jako nowoczesne podejście do stworzenia bazy danych aplikacji. Wykorzystano również szereg narzędzi wspomagających i usprawniających tworzenie aplikacji.
+Główne założenia projektowe:
+\begin{itemize}
+    \item Właściciele dostają szereg funkcjonalności pozwalający na tworzenie profilu zwierzaka oraz tworzenie spacerów z deklaracją godziny oraz miejsca spaceru. Możliwe jest również wystawianie opinii po spacerze w celu weryfikacji kompetencji opiekuna.
+    \item Opiekunowie otrzymują możliwość wyszukiwania spacerów, która bazuje na lokalizacji użytkownika. Aplikacja udostępnia tygodniowy oraz miesięczny wygląd planera ze spacerami na które użytkownik się zapisał jak i również opiekunowie mogą dodawać informacje o odbytym spacerze.
+    \item Administracja dostaje możliwość podglądu bazy użytkowników, zwierząt oraz spacerów jak i monitorowania samej aplikacji oraz błędów które zgłosili inni uzytkownicy.
+\end{itemize}
 
 \section{Układ pracy}
+Praca została podzielona na dwa główne rozdziały:
+\begin{itemize}
+    \item Część teoretyczna
+    
+    Która opisuje dokładnie wykorzystane technologie, techniki oraz programy które zostały wykorzystane przy implementacji pracy
+
+    \item Część implementacyjna
+    
+    Która skupia się na szczegółach dotyczących implementacji aplikacji oraz zawiera opis funkcjonalny.
+
+    \item Podsumowanie
+    Które podsumowuje proces tworzenia aplikacji oraz prezentuje dalsze możliwości rozwoju aplikacji w przyszłości.
+\end{itemize}
 
 % Praca dyplomowa
 % \begin{itemize}

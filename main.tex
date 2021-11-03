@@ -381,6 +381,11 @@
 %Promotor
 \newcommand\promotor[1]{\renewcommand\@promotor{#1}}
 \newcommand\@promotor{}
+%Katedra
+\newcommand\katedraMain[1]{\renewcommand\@katedraMain{#1}}
+\newcommand\@katedraMain{}
+\newcommand\katedraSub[1]{\renewcommand\@katedraSub{#1}}
+\newcommand\@katedraSub{}
 
 %\usepackage[absolute]{textpos} % zamarkowano, bo ostatecznie wykorzystano otoczenie picture
 
@@ -441,7 +446,9 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \vfill
 \begin{tabularx}{\linewidth}{p{6cm}l}
 		&{\fontsize{16pt}{18pt}\selectfont PROWADZĄCY PRACĘ:}\\[2mm] %UWAGA: tutaj jest miejsce na nazwisko promotora pracy
-		&{\fontsize{14pt}{16pt}\selectfont \@promotor}\\[10mm]
+		&{\fontsize{14pt}{16pt}\selectfont \@promotor}\\
+		&{\fontsize{14pt}{16pt}\selectfont \@katedraMain}\\
+		&{\fontsize{14pt}{16pt}\selectfont \@katedraSub}\\[10mm]
 		&{\fontsize{16pt}{18pt}\selectfont OCENA PRACY:}\\[20mm]
 	\end{tabularx}
 \vspace{2cm}
@@ -470,9 +477,11 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \author{Amadeusz Janiszyn}
 \uczelnia{POLITECHNIKA WROCŁAWSKA}
 \wydzial{WYDZIAŁ ELEKTRONIKI}
-\kierunek{Automatyka i Robotyka}
-\specjalnosc{Przemysł 4.0}
-\promotor{dr inż. Mariusz Uchroński, Katedra Automatyki, Mechatroniki i Systemów Sterowania}
+\kierunek{Automatyka i Robotyka (AIR)}
+\specjalnosc{Przemysł 4.0 (ARP)}
+\promotor{Dr inż. Mariusz Uchroński,}
+\katedraMain{Katedra Automatyki, Mechatroniki}
+\katedraSub{i Systemów Sterowania}
 \date{WROCŁAW, 2021}
 
 % Ustawienie odstępu od góry w nienumerowanych rozdziałach oraz wykazach:
@@ -507,8 +516,8 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \newpage
 \thispagestyle{empty}
 \mbox{}\vfill
-\noindent\begin{tabular}{@{}ll} Opracował: & Tomasz Kubik <tomasz.kubik@pwr.edu.pl>\\
- Data: & maj 2016 
+\noindent\begin{tabular}{@{}ll} Opracował: & Amadeusz Janiszyn <249013@student.pwr.edu.pl>\\
+ Data: & Grudzień 2021 
  \end{tabular}\\[15mm]
 \noindent\includegraphics[width=3cm]{by-nc-sa}\newline
 {\normalfont 
