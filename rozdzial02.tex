@@ -2,100 +2,99 @@
 \section{Wprowadzenie do projektu}
 Genezą powstania serwisu internetowego jest fakt, że istnieje duża grupa osób z psami, które z różnych przyczyn nie mają czasu na regularne spacery ze swoim pupilem. Dodatkową funkcjonalnością oferowaną przez aplikację jest możliwość wyprowadzania potrzebujących psów na spacer jako opiekun. Jest to opcja przeznaczona dla osób, które lubią zajmować się zwierzętami i mają więcej wolnego czasu, niż opiekunowie.
 
-\section{Proces}
+\section{Proces projektowania i implementacji}
 Proces tworzenia aplikacji obejmował kilka etapów:
 \begin{itemize}
-    \item Opracowanie wymagań funkcjonalnych oraz niefunkcjonalnych
-    \item Opracowanie widoków aplikacji
-    \item Opracowanie warstwy biznesowej po stronie backendu
-    \item Opracowanie warstwy dostępowej po stronie frontendu
+    \item Opracowanie wymagań funkcjonalnych oraz niefunkcjonalnych;
+    \item Opracowanie widoków aplikacji;
+    \item Opracowanie warstwy biznesowej po stronie backendu;
+    \item Opracowanie warstwy dostępowej po stronie frontendu;
 \end{itemize}
 
-Organizacja pracy nad projektem odgrywa kluczowe znaczenie na każdym etapie implementacyjnym. Każde stadium projektu było zarządzany przy pomocy aplikacji Trello. Jest to darmowa aplikacja pozwalająca na skuteczne kierowanie projektem przez jedną lub wiele osób, współpracujących ze sobą. Organizacja pracy polegała na tworzeniu tablic do poszczególnych etapów. Tablice były tworzone na podstawie tych, używanych w metodologii Kanban. Następnie na początku każdego etapu były planowane zadania do zrobienia i wpisywane do aplikacji. Miało to na celu większą organizację oraz kontrolę nad projektem. Wczesne zaznajomienie się ze zwinnymi metodykami zarządzania produkcją jest obecnie cenione na rynku pracy, ponieważ wiele firm z sektoru IT używa ich na codzień.
+Organizacja pracy nad projektem odgrywa kluczowe znaczenie na każdym etapie implementacyjnym. Każde stadium projektu było zarządzany przy pomocy aplikacji Trello. Jest to darmowa aplikacja, pozwalająca na skuteczne kierowanie projektem przez jedną lub wiele osób, współpracujących ze sobą. Organizacja pracy polegała na tworzeniu tablic do poszczególnych etapów. Tablice były tworzone na podstawie tych używanych w metodologii Kanban. Następnie na początku każdego etapu były planowane zadania do zrobienia i wpisywane do aplikacji. Miało to na celu większą organizację oraz kontrolę nad projektem. Wczesne zaznajomienie się ze zwinnymi metodykami zarządzania produkcją jest obecnie cenione na rynku pracy, ponieważ wiele firm z sektoru IT używa ich na codzień.
 \section{Wymagania funkcjonalne oraz niefunkcjonalne}
 
 W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjonalnych oraz niefunkcjonalnych. Miało to na celu pogrupowanie zadań na odpowiednie podetapy. Pozwoliło skupić się na kluczowych, dla danej fazy, funkcjach.
 \subsection{Wymagania funkcjonalne}
 \begin{itemize}
-    \item Rejestracja nowych użytkowników z podziałem na role
-    \item Logowanie użytkowników do serwisu
-    \item Możliwość zmiany danych użytkownika -- zdjęcie profilowe, dane osobowe, hasło
-    \item Możliwość dodania profilu swojego psa
-    \item Możliwość stworzenia spaceru
-    \item Ocena opiekunów po zakończonym spacerze
-    \item Przeglądanie listy dostępnych spacerów
-    \item Przeglądanie listy nadchodzących spacerów
-    \item Zapisywanie na spacery
-    \item Wypisywanie się ze spacerów
-    \item Dodawanie opinii o wyprowadzonym zwierzaków
-    \item Przeglądanie historii spacerów
-    \item Przeglądanie profili uzytkowników
-    \item Przeglądanie profili psów
-    \item Przeglądanie profili spacerów
-    \item Zgłaszanie błędów w aplikacji przez użytkowników
-    \item Zarządzanie kontami użytkowników -- blokowanie, banowanie
-    \item Wyświetlanie bazy danych użytkowników
-    \item Wyświetlanie bazy danych zwierzaków
-    \item Wyświetlanie bazy danych spacerów
-    \item System zarządzania zgłoszonymi błędami
+    \item Rejestracja nowych użytkowników z podziałem na role;
+    \item Logowanie użytkowników do serwisu;
+    \item Możliwość zmiany danych użytkownika -- zdjęcie profilowe, dane osobowe, hasło;
+    \item Możliwość dodania profilu swojego psa;
+    \item Możliwość stworzenia spaceru;
+    \item Ocena opiekunów po zakończonym spacerze;
+    \item Przeglądanie listy dostępnych spacerów;
+    \item Przeglądanie listy nadchodzących spacerów;
+    \item Zapisywanie na spacery;
+    \item Wypisywanie się ze spacerów;
+    \item Dodawanie opinii o wyprowadzonym zwierzaków;
+    \item Przeglądanie historii spacerów;
+    \item Przeglądanie profili uzytkowników;
+    \item Przeglądanie profili spacerów;
+    \item Zgłaszanie błędów w aplikacji przez użytkowników;
+    \item Zarządzanie kontami użytkowników -- blokowanie, banowanie;
+    \item Wyświetlanie bazy danych użytkowników;
+    \item Wyświetlanie bazy danych zwierzaków;
+    \item Wyświetlanie bazy danych spacerów;
+    \item System zarządzania zgłoszonymi błędami;
 \end{itemize}
 \subsection{Wymagania niefunkcjonalne}
 \begin{itemize}
-    \item Dostęp do internetu
+    \item Dostęp do internetu;
 \end{itemize}
 \section{Diagram oraz przypadki użycia}
 
 \subsection{Przypadki użycia}
 
 \noindent
-\textbf{Przypadek użycia:} Rejestracja \\
-\textbf{Aktor:} Niezalogowany użytkownik \\
-\textbf{Opis:} Rejestracja w serwisie\\
-\textbf{Warunki wstępne:} Użytkownik niezalogowany, nieposiadający konta, wchodzący do serwisu po raz pierwszy\\
+\textbf{Przypadek użycia:} Rejestracja. \\
+\textbf{Aktor:} Niezalogowany użytkownik. \\
+\textbf{Opis:} Rejestracja w serwisie. \\
+\textbf{Warunki wstępne:} Użytkownik niezalogowany, nieposiadający konta, wchodzący do serwisu po raz pierwszy.\\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik klika w odnośnik \textit{...}
-    \item Użytkownik zostaje przeniesiony do strony z formularzem rejestracyjnym
-    \item  Użytkownik wypełnia dane
+    \item Użytkownik klika w odnośnik \textit{...};
+    \item Użytkownik zostaje przeniesiony do strony z formularzem rejestracyjnym;
+    \item  Użytkownik wypełnia dane;
     \begin{itemize}
-        \item Dane są niepoprawne -- serwis informuje uzytkownika o błędach, przycisk jest nieaktywny
-        \item Dane są poprawne -- przycisk jest aktywny i użytkownik może stworzyć konto
+        \item Dane są niepoprawne -- serwis informuje uzytkownika o błędach, przycisk jest nieaktywny;
+        \item Dane są poprawne -- przycisk jest aktywny i użytkownik może stworzyć konto;
     \end{itemize}
-    \item Wysłanie formularzu -- użytkownik jest informowany o sukcesie bądź błędzie operacji
+    \item Wysłanie formularzu -- użytkownik jest informowany o sukcesie bądź błędzie operacji;
 \end{itemize}
 
-\textbf{Przypadek użycia:} Logowanie\\
-\textbf{Aktor:} Niezalogowany użytkownik\\
-\textbf{Opis:} Logowanie do serwisu\\
-\textbf{Warunki wstępne:} Użytkownik niezalogowany, posiadający konto w serwisie\\
+\textbf{Przypadek użycia:} Logowanie. \\
+\textbf{Aktor:} Niezalogowany użytkownik. \\
+\textbf{Opis:} Logowanie do serwisu. \\
+\textbf{Warunki wstępne:} Użytkownik niezalogowany, posiadający konto w serwisie. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wypełnia formularz logowania
-    \item Użytkownik klika w przycisk \textit{Zaloguj się}
+    \item Użytkownik wypełnia formularz logowania;
+    \item Użytkownik klika w przycisk \textit{Zaloguj się};
     \begin{itemize}
-        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji
-        \item W przypadku błędu użytkownik jest informowany o błędzie
+        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji;
+        \item W przypadku błędu użytkownik jest informowany o błędzie;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Zmiana zdjęcia profilowego\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Zmiana zdjęcia profilowego\\
-\textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem\\
+\textbf{Przypadek użycia:} Zmiana zdjęcia profilowego. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Zmiana zdjęcia profilowego. \\
+\textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę profil
-    \item Po najechaniu na zdjęcie profilowe klika w ikonę edycji
-    \item Użytkownik wgrywa nowe zdjęcie
-    \item Użytkownik klika w przycisk \textit{Zmień zdjęcie}
-    \item Użytkownik otrzymuje informację zwrotną o statusie wykonanej operacji
+    \item Użytkownik wchodzi w zakładkę profil;
+    \item Po najechaniu na zdjęcie profilowe klika w ikonę edycji;
+    \item Użytkownik wgrywa nowe zdjęcie;
+    \item Użytkownik klika w przycisk \textit{Zmień zdjęcie};
+    \item Użytkownik otrzymuje informację zwrotną o statusie wykonanej operacji;
 \end{itemize}
 
-% \textbf{Przypadek użycia:} Zmiana opisu\\
-% \textbf{Aktor:} Zalogowany użytkownik\\
-% \textbf{Opis:} Zmiana opisu profilu\\
-% \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem\\
+% \textbf{Przypadek użycia:} Zmiana opisu. \\
+% \textbf{Aktor:} Zalogowany użytkownik. \\
+% \textbf{Opis:} Zmiana opisu profilu. \\
+% \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem. \\
 % \textbf{Przebieg:}
 % \begin{itemize}
 %     \item Użytkownik wchodzi w zakładkę profil
@@ -105,10 +104,10 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 %     \item Użytkownik otrzymuje informację zwrotną o statusie wykonanej operacji
 % \end{itemize}
 
-% \textbf{Przypadek użycia:} Zmiana danych\\
-% \textbf{Aktor:} Zalogowany użytkownik\\
-% \textbf{Opis:} Zmiana danych\\
-% \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem\\
+% \textbf{Przypadek użycia:} Zmiana danych. \\
+% \textbf{Aktor:} Zalogowany użytkownik. \\
+% \textbf{Opis:} Zmiana danych. \\
+% \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem. \\
 % \textbf{Przebieg:}
 % \begin{itemize}
 %     \item Użytkownik wchodzi w zakładkę profil
@@ -118,10 +117,10 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 %     \item Użytkownik otrzymuje informację zwrotną o statusie wykonanej operacji
 % \end{itemize}
 
-% \textbf{Przypadek użycia:} Zmiana hasła\\
-% \textbf{Aktor:} Zalogowany użytkownik\\
-% \textbf{Opis:} Zmiana hasła\\
-% \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem\\
+% \textbf{Przypadek użycia:} Zmiana hasła. \\
+% \textbf{Aktor:} Zalogowany użytkownik. \\
+% \textbf{Opis:} Zmiana hasła. \\
+% \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem. \\
 % \textbf{Przebieg:}
 % \begin{itemize}
 %     \item Użytkownik wchodzi w zakładkę profil
@@ -132,290 +131,290 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 % \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Dodanie profilu psa\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Dodanie profilu zwierzaka do serwisu\\
-\textbf{Warunki wstępne:} Użytkownik zalogowany, z aktywnym kontem oraz rolą \textit{OWNER}\\
+\textbf{Przypadek użycia:} Dodanie profilu psa. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Dodanie profilu zwierzaka do serwisu. \\
+\textbf{Warunki wstępne:} Użytkownik zalogowany, z aktywnym kontem oraz rolą \textit{OWNER}. \\
 \textbf{Przebieg:}
 \begin{itemize} 
-    \item Użytkownik wchodzi w zakładkę \textit{Dodaj spacer}
-    \item Użytkownik wypełnia formularz
+    \item Użytkownik wchodzi w zakładkę \textit{Dodaj spacer};
+    \item Użytkownik wypełnia formularz;
     \begin{itemize}
-        \item Dane są poprawne -- aktywuje się submit button (przypis)
-        \item Dane są niepoprawne -- pojawia się informacja zwrotna
+        \item Dane są poprawne -- aktywuje się submit button (przypis);
+        \item Dane są niepoprawne -- pojawia się informacja zwrotna;
     \end{itemize}
-    \item Użytkownik klika w przycisk \textit{Dodaj zwierzaka}
+    \item Użytkownik klika w przycisk \textit{Dodaj zwierzaka};
     \begin{itemize}
-        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji
-        \item W przypadku błędu użytkownik jest informowany o błędzie
+        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji;
+        \item W przypadku błędu użytkownik jest informowany o błędzie;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Dodanie nowego spaceru\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Dodanie terminu spaceru\\
-\textbf{Warunki wstępne:} Użytkownik zalogowany, z aktywnym kontem oraz rolą \textit{OWNER}\\
+\textbf{Przypadek użycia:} Dodanie nowego spaceru. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Dodanie terminu spaceru. \\
+\textbf{Warunki wstępne:} Użytkownik zalogowany, z aktywnym kontem oraz rolą \textit{OWNER}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Dodaj spacer}
-    \item Użytkownik wypełnia formularz
+    \item Użytkownik wchodzi w zakładkę \textit{Dodaj spacer};
+    \item Użytkownik wypełnia formularz;
     \begin{itemize}
-        \item Dane są poprawne -- aktywuje się submit button (przypis)
-        \item Dane są niepoprawne -- pojawia się informacja zwrotna
+        \item Dane są poprawne -- aktywuje się submit button (przypis);
+        \item Dane są niepoprawne -- pojawia się informacja zwrotna;
     \end{itemize}
-    \item Użytkownik klika w przycisk \textit{Dodaj zwierzaka}
+    \item Użytkownik klika w przycisk \textit{Dodaj zwierzaka};
     \begin{itemize}
-        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji
-        \item W przypadku błędu użytkownik jest informowany o błędzie
+        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji;
+        \item W przypadku błędu użytkownik jest informowany o błędzie;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie historii spacerów\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie historii spacerów\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{OWNER} lub \textit{SITTER}\\
+\textbf{Przypadek użycia:} Przeglądanie historii spacerów. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie historii spacerów. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{OWNER} lub \textit{SITTER}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Historia}
-    \item Wyświetlana jest lista spacerów w przszłości
+    \item Użytkownik wchodzi w zakładkę \textit{Historia};
+    \item Wyświetlana jest lista spacerów w przszłości;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:}  Skomentowanie spaceru\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Dodanie komentarza do spaceru\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacerem w przeszłości\\
+\textbf{Przypadek użycia:}  Skomentowanie spaceru. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Dodanie komentarza do spaceru. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacerem w przeszłości. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Uzytkownik wchodzi w zakładkę \textit{Historia}
-    \item Użytkownik wybiera spacer, który chce skomentować
-    \item Użytkownik wypełnia formularz
+    \item Uzytkownik wchodzi w zakładkę \textit{Historia};
+    \item Użytkownik wybiera spacer, który chce skomentować;
+    \item Użytkownik wypełnia formularz;
     \begin{itemize}
-        \item Dane są poprawne -- aktywuje się submit button (przypis)
-        \item Dane są niepoprawne -- pojawia się informacja zwrotna
+        \item Dane są poprawne -- aktywuje się submit button (przypis);
+        \item Dane są niepoprawne -- pojawia się informacja zwrotna;
     \end{itemize}
-    \item Użytkownik klika w przycisk \textit{Dodaj komentarz}
+    \item Użytkownik klika w przycisk \textit{Dodaj komentarz};
     \begin{itemize}
-        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji
-        \item W przypadku błędu użytkownik jest informowany o błędzie
+        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji;
+        \item W przypadku błędu użytkownik jest informowany o błędzie;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Ocena opiekuna\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Dodanie oceny opiekunowi\\
-\textbf{Warunki wstępne:}  Zalogowany użytkownik z aktywnym kontem, rolą \textit{OWNER} oraz zakończonym spacerem w przeszłości\\
+\textbf{Przypadek użycia:} Ocena opiekuna. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Dodanie oceny opiekunowi. \\
+\textbf{Warunki wstępne:}  Zalogowany użytkownik z aktywnym kontem, rolą \textit{OWNER} oraz zakończonym spacerem w przeszłości. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Uzytkownik wchodzi w zakładkę \textit{Historia}
-    \item Użytkownik wybiera spacer z opiekunem, którego chce ocenić
-    \item Użytkownik wypełnia formularz
+    \item Uzytkownik wchodzi w zakładkę \textit{Historia};
+    \item Użytkownik wybiera spacer z opiekunem, którego chce ocenić;
+    \item Użytkownik wypełnia formularz;
     \begin{itemize}
-        \item Dane są poprawne -- aktywuje się submit button (przypis)
-        \item Dane są niepoprawne -- pojawia się informacja zwrotna
+        \item Dane są poprawne -- aktywuje się submit button (przypis);
+        \item Dane są niepoprawne -- pojawia się informacja zwrotna;
     \end{itemize}
-    \item Użytkownik klika w przycisk \textit{Dodaj ocenę}
+    \item Użytkownik klika w przycisk \textit{Dodaj ocenę};
     \begin{itemize}
-        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji
-        \item W przypadku błędu użytkownik jest informowany o błędzie
+        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji;
+        \item W przypadku błędu użytkownik jest informowany o błędzie;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie listy dostępnych spacerów\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:}  Przeglądanie listy dostępnych spacerów\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{SITTER}\\
+\textbf{Przypadek użycia:} Przeglądanie listy dostępnych spacerów. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:}  Przeglądanie listy dostępnych spacerów. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{SITTER}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Spacery} z aktywnym widokiem wszystkich spacerów
-    \item Pobierana jest lista psów, bazująca na lokalizacji
-    \item Lista spacerów wyświetlana jest użytkownikowi
+    \item Użytkownik wchodzi w zakładkę \textit{Spacery} z aktywnym widokiem wszystkich spacerów;
+    \item Pobierana jest lista psów, bazująca na lokalizacji;
+    \item Lista spacerów wyświetlana jest użytkownikowi;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Zapisanie się na spacer\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Zapisanie się na spacer\\
-\textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacer dostępny w przyszłości z wolnym miejscem do zapisu\\
+\textbf{Przypadek użycia:} Zapisanie się na spacer. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Zapisanie się na spacer. \\
+\textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacer dostępny w przyszłości z wolnym miejscem do zapisu. \\
 \textbf{Przebieg:}
 \textbf{Scenariusz A: Użytkownik znajduje się w zakładce \textit{Spacery}}
 \begin{itemize}
-    \item Użytkownik klika w przycisk \textit{Zapisz się}
-    \item Użytkownik jest informowany stosownym komunikatem
+    \item Użytkownik klika w przycisk \textit{Zapisz się};
+    \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
 \textbf{Scenariusz B: Użytkownik znajduje się w profilu spaceru}
 \begin{itemize}
-    \item Użytkownik klika w przycisk \textit{Zapisz się}
-    \item Użytkownik jest informowany stosownym komunikatem
+    \item Użytkownik klika w przycisk \textit{Zapisz się};
+    \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Wypisanie się ze spaceru\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Wypisanie się ze spaceru\\
-\textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacer w przyszłości na który użytkownik jest już zapisany\\
+\textbf{Przypadek użycia:} Wypisanie się ze spaceru. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Wypisanie się ze spaceru. \\
+\textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacer w przyszłości na który użytkownik jest już zapisany. \\
 \textbf{Przebieg:}
 \textbf{Scenariusz A: Użytkownik znajduje się w zakładce \textit{Spacery}}
 \begin{itemize}
-    \item Użytkownik klika w przycisk \textit{Wypisz się} 
-    \item Użytkownik jest informowany stosownym komunikatem
+    \item Użytkownik klika w przycisk \textit{Wypisz się};
+    \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
 \textbf{Scenariusz B: Użytkownik znajduje się w profilu spaceru}
 \begin{itemize}
-    \item Użytkownik klika w przycisk \textit{Wypisz się}
-    \item Użytkownik jest informowany stosownym komunikatem
+    \item Użytkownik klika w przycisk \textit{Wypisz się};
+    \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie listy nadchodzących spacerów\\
-\textbf{Aktor:} Zalogowany uzytkownik\\
-\textbf{Opis:} Przeglądanie listy nadchodzących spacerów na które użytkownik jest zapisany\\
-\textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz co najmniej jednym spacerem na który jest zapisany\\
+\textbf{Przypadek użycia:} Przeglądanie listy nadchodzących spacerów. \\
+\textbf{Aktor:} Zalogowany uzytkownik. \\
+\textbf{Opis:} Przeglądanie listy nadchodzących spacerów na które użytkownik jest zapisany. \\
+\textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz co najmniej jednym spacerem na który jest zapisany. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Uzytkownik wchodzi w zakładkę \textit{Spacery}
-    \item Uzytkownik przełącza widok na \textit{Nadchodzące}
-    \item Lista nadchodzących spacerów jest wyświetlana użytkownikowi
+    \item Uzytkownik wchodzi w zakładkę \textit{Spacery};
+    \item Uzytkownik przełącza widok na \textit{Nadchodzące};
+    \item Lista nadchodzących spacerów jest wyświetlana użytkownikowi;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie terminarza ze spacerami\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie terminarza ze spacerami, na które użytkownik jest zapisany\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{SITTER}\\
+\textbf{Przypadek użycia:} Przeglądanie terminarza ze spacerami. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie terminarza ze spacerami, na które użytkownik jest zapisany. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{SITTER}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Terminarz}
-    \item Uzytkownik może wybrać tryb wyświetlania
+    \item Użytkownik wchodzi w zakładkę \textit{Terminarz};
+    \item Uzytkownik może wybrać tryb wyświetlania;
     \begin{itemize}
-        \item Miesiąc -- widok miesiąca ze zdjęciami psów oraz odnośnikami do profilu spaceru
-        \item Tydzień -- widok tygodniowy z podstawowymi informacjami o danym spacerze oraz odnośnikiem do profilu spaceru
+        \item Miesiąc -- widok miesiąca ze zdjęciami psów oraz odnośnikami do profilu spaceru;
+        \item Tydzień -- widok tygodniowy z podstawowymi informacjami o danym spacerze oraz odnośnikiem do profilu spaceru;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie profilu uzytkownika\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie profilu użytkownka\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą\\
+\textbf{Przypadek użycia:} Przeglądanie profilu uzytkownika. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie profilu użytkownka. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik klika w odnośnik przekierowujący na profil innego użytkownika
-    \item Wyświetlają się szczegółowe informacje o użytkowniku
+    \item Użytkownik klika w odnośnik przekierowujący na profil innego użytkownika;
+    \item Wyświetlają się szczegółowe informacje o użytkowniku;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie profilu psa\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie profilu psa\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą\\
+\textbf{Przypadek użycia:} Przeglądanie profilu psa. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie profilu psa. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Uzytkownik klika w odnośnik przekierowujący na profil psa
-    \item Wyświetlają się szczegółowe informacje o zwierzaku: Opis, zdjęcia, komentarze, nadchodzące spacery
+    \item Uzytkownik klika w odnośnik przekierowujący na profil psa;
+    \item Wyświetlają się szczegółowe informacje;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie profilu spaceru\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie profilu spaceru\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą\\
+\textbf{Przypadek użycia:} Przeglądanie profilu spaceru. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie profilu spaceru. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik klika w odnośnik przekierowujący na profil spaceru
-    \item Wyświetlają się szczegółowe informacje o spacerze
+    \item Użytkownik klika w odnośnik przekierowujący na profil spaceru;
+    \item Wyświetlają się szczegółowe informacje o spacerze;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Zgłaszanie błędów\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:}  Zalogowany użytkownik\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą\\
+\textbf{Przypadek użycia:} Zgłaszanie błędów. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:}  Zalogowany użytkownik. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik klika w ikonę błędu w prawym dolnym rogu
-    \item Użytkownik wypełnia formularz
+    \item Użytkownik klika w ikonę błędu w prawym dolnym rogu;
+    \item Użytkownik wypełnia formularz;
     \begin{itemize}
-        \item Dane są poprawne -- aktywuje się submit button (przypis)
-        \item Dane są niepoprawne -- pojawia się informacja zwrotna
+        \item Dane są poprawne -- aktywuje się submit button (przypis);
+        \item Dane są niepoprawne -- pojawia się informacja zwrotna;
     \end{itemize}
-    \item Użytkownik klika w przycisk \textit{Zgłoś błąd}
+    \item Użytkownik klika w przycisk \textit{Zgłoś błąd};
     \begin{itemize}
-        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji
-        \item W przypadku błędu użytkownik jest informowany o błędzie
+        \item W przypadku sukcesu użytkownik zostaje przekierowany do strony aplikacji;
+        \item W przypadku błędu użytkownik jest informowany o błędzie;
     \end{itemize}
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie listy wszystkich użytkowników\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie bazy użytkowników\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}\\
+\textbf{Przypadek użycia:} Przeglądanie listy wszystkich użytkowników. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie bazy użytkowników. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Użytkownicy}
-    \item Pojawia się lista wszystkich użytkowników zarejestrowanych w serwisie 
+    \item Użytkownik wchodzi w zakładkę \textit{Użytkownicy};
+    \item Pojawia się lista wszystkich użytkowników zarejestrowanych w serwisie;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie listy wszystkich spacerów\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie bazy spacerów\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}\\
+\textbf{Przypadek użycia:} Przeglądanie listy wszystkich spacerów. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie bazy spacerów. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Zwierzęta i spacery}
-    \item Użytkownik wybiera widok spacerów
-    \item Pojawia się lista wszystkich spacerów dodanych w serwisie 
+    \item Użytkownik wchodzi w zakładkę \textit{Zwierzęta i spacery};
+    \item Użytkownik wybiera widok spacerów;
+    \item Pojawia się lista wszystkich spacerów dodanych w serwisie;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie listy wszystkich psów \\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie bazy zwierząt\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}\\
+\textbf{Przypadek użycia:} Przeglądanie listy wszystkich psów . \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie bazy zwierząt. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Zwierzęta i spacery}
-    \item Użytkownik wybiera widok zwierząt
-    \item Pojawia się lista wszystkich psów dodanych w serwisie 
+    \item Użytkownik wchodzi w zakładkę \textit{Zwierzęta i spacery};
+    \item Użytkownik wybiera widok zwierząt;
+    \item Pojawia się lista wszystkich psów dodanych w serwisie;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie aktywności użytkowników\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie aktywności użytkowników\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN} \\
+\textbf{Przypadek użycia:} Przeglądanie aktywności użytkowników. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie aktywności użytkowników. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN} . \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Uzytkownik wchodzi w zakładkę \textit{Aktywność}
-    \item Pojawia się lista aktywności użytkowników na serwisie
+    \item Uzytkownik wchodzi w zakładkę \textit{Aktywność};
+    \item Pojawia się lista aktywności użytkowników na serwisie;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie listy zgłoszonych błędów\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie listy zgłoszonych błędów przez użytkowników\\
-\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}\\
+\textbf{Przypadek użycia:} Przeglądanie listy zgłoszonych błędów. \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie listy zgłoszonych błędów przez użytkowników. \\
+\textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik wchodzi w zakładkę \textit{Błędy}
-    \item Pojawiają się lista błędów podzielona na 3 grupy -- nowe, w trakcie realizacji, naprawione
+    \item Użytkownik wchodzi w zakładkę \textit{Błędy};
+    \item Pojawiają się lista błędów podzielona na 3 grupy -- nowe, w trakcie realizacji, naprawione;
 \end{itemize}
 
 \noindent
-\textbf{Przypadek użycia:} Przeglądanie dashboardu (przypis)\\
-\textbf{Aktor:} Zalogowany użytkownik\\
-\textbf{Opis:} Przeglądanie dashboardu\\
-\textbf{Warunki wstępne:} Zalogowany uzytkownik z rolą \textit{OWNER} lub \textit{SITTER}\\
+\textbf{Przypadek użycia:} Przeglądanie dashboardu (przypis). \\
+\textbf{Aktor:} Zalogowany użytkownik. \\
+\textbf{Opis:} Przeglądanie dashboardu. \\
+\textbf{Warunki wstępne:} Zalogowany uzytkownik z rolą \textit{OWNER} lub \textit{SITTER}. \\
 \textbf{Przebieg:}
 \begin{itemize}
-    \item Użytkownik znajduje się w zakładce dashboard
-    \item Pojawia się lista nadchodzących spacerów oraz powiadomień
+    \item Użytkownik znajduje się w zakładce dashboard;
+    \item Pojawia się lista nadchodzących spacerów oraz powiadomień;
 \end{itemize}
 
 \section{Widoki, mockupy}
@@ -433,9 +432,9 @@ Zbiór zależności i ich opis:
     \item SwaggerUI -- wizualizacja oraz dostęp do API;
     \item Spring Security -- zależność odpowiedzialna za bezpieczeństwo aplikacji oraz system uwierzytelniania, autoryzacji oraz dostępów przyznawanych na podstawie ról;
     \item JSON WebToken -- system autoryzacji użytkowników, niezbędny do implementacji logowania;
-    \item MongoDB driver sterownik do komunikacji z nierelacyjną bazą danych MongoDB
-    \item SpringWeb -- zależność udostępniająca szereg funkcjonalności związanych z tworzeniem silników aplikacji webowych
-    \item Lombok -- procesor adnotacji, pozwalający na generowanie powtarzalnego kodu przed kompilacją
+    \item MongoDB driver sterownik do komunikacji z nierelacyjną bazą danych MongoDB;
+    \item SpringWeb -- zależność udostępniająca szereg funkcjonalności związanych z tworzeniem silników aplikacji webowych;
+    \item Lombok -- procesor adnotacji, pozwalający na generowanie powtarzalnego kodu przed kompilacją;
 \end{itemize}
 
 Z implementacją warstwy biznesowej wiąże się konieczność wyboru bazy danych dla serwisu. W omawianym projekcie zdecydowano wykorzystać nierelacyjną bazę danych — MongoDB. Wybrana baza danych w ostatnich latach plasuje się w czołówce rankingowej. Charakteryzuje się brakiem zdefiniowanej struktury a dane składowane są jako dokumenty w stylu JSON (ang. JavaScript Object Notation). Z racji braku zdefiniowanych relacji między encjami (w tym przypadku nazwanych kolekcjami), pozwala na pełną swobodę edycji oraz manipulacji danymi. W swojej podstawowej formie oferuje składowanie niewielkich plików graficznych.
