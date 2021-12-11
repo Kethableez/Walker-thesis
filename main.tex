@@ -1,10 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Zawartość: Główny plik szablonu pracy dyplomowej (magisterskiej/inżynierskiej).
-%  Opracował: Tomasz Kubik <tomasz.kubik@pwr.edu.pl>
-%  Data: kwiecień 2016
-%  Wersja: 0.2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[a4paper,onecolumn,oneside,12pt,extrafontsizes]{memoir}
 % W celu przygotowania wydruku do archiwum należy przesłonić komendę powyższą
 % dwoma poniższymi komendami:
@@ -19,71 +12,26 @@
 \usepackage{setspace}
 \usepackage{tabularx}
 \usepackage{color,calc}
-%\usepackage{soul} % pakiet z komendami do podkreślania tekstu
-
-\usepackage{ebgaramond} % pakiet z czcionkami garamond, potrzebny tylko do strony tytułowej, musi wystąpić przed pakietem tgtermes
-
-%% Aby uzyskać polskie literki w pdfie (a nie zlepki) korzystamy z pakietu czcionek tgterms. 
-%% W pakiecie tym są zdefiniowane klony czcionek Times o kształtach: normalny, pogrubiony, italic, italic pogrubiony.
-%% W pakiecie tym brakuje czcionki o kształcie: slanted (podobny do italic). 
-%% Jeśli w dokumencie gdzieś zostanie zastosowana czcionka slanted (np. po użyciu komendy \textsl{}), to
-%% latex dokona podstawienia na czcionkę standardową i zgłosi to w ostrzeżeniu (warningu).
-%% Ponadto tgtermes to czcionka do tekstu. Wszelkie matematyczne wzory będą sformatowane domyślną czcionką do wzorów.
-%% Jeśli wzory mają być sformatowane z wykorzystaniem innych czcionek, trzeba to jawnie zadeklarować.
-
-%% Po zainstalowaniu pakietu tgtermes może będzie trzeba zauktualizować informacje 
-%% o dostępnych fontach oraz mapy. Można to zrobić z konsoli (jako administrator)
-%% initexmf --admin --update-fndb
-%% initexmf --admin --mkmaps
-
+\usepackage{ebgaramond}
 \usepackage{tgtermes}   
 \renewcommand*\ttdefault{txtt}
-
-% We wcześniejszej wersji szablonu korzystano z innych czcionek. Dla celów historycznych pozostawiono je w komentarzu
-%\usepackage{mathptmx} % pakiet będący następcą pakietów times and mathptm, niestety polskie literki są zlepkami
-%\usepackage{newtxtext,newtxmath} % pakiety dostarczające Times dla tekstów i wzorów matematycznych,  
-%                                  rozwiązuje problemy występujące w mathptmx, ale wymaga zainstalowania
-%                                  dodatkowych pakietów oraz uruchomienia updmap (konsola administratora)
-%                                  niestety polskie literki są zlepkami
-%\usepackage{newtxmath,tgtermes} % można też połączyć czcionki do tekstu i czcionki do wzorów
-
 \usepackage{listings} % pakiet do prezentacji kodu. 
-%Wcześniej był problem z polskimi znakami w otoczeniu lstlisting, stąd pozostawiono w komentarzu zastosowane wtedy rozwiązanie: 
 \lstset{literate=%-
 {ą}{{\k{a}}}1 {ć}{{\'c}}1 {ę}{{\k{e}}}1 {ł}{{\l{}}}1 {ń}{{\'n}}1 {ó}{{\'o}}1 {ś}{{\'s}}1 {ż}{{\.z}}1 {ź}{{\'z}}1 {Ą}{{\k{A}}}1 {Ć}{{\'C}}1 {Ę}{{\k{E}}}1 {Ł}{{\L{}}}1 {Ń}{{\'N}}1 {Ó}{{\'O}}1 {Ś}{{\'S}}1 {Ż}{{\.Z}}1 {Ź}{{\'Z}}1 }%{\ \ }{{\ }}1}
 
-% Choć możliwe jest zastosowanie różnych pakietów formatujących tabele, zaleca się tego nie robić.
-%\usepackage{longtable}
-%\usepackage{ltxtable}
-%\usepackage{tabulary}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Ustawienia odpowiedzialne za sposób łamania dokumentu
-%% i ułożenie elementów pływających
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\hyphenpenalty=10000		% nie dziel wyrazów zbyt często
-\clubpenalty=10000      %kara za sierotki
-\widowpenalty=10000  % nie pozostawiaj wdów
-\brokenpenalty=10000		% nie dziel wyrazów między stronami
-\exhyphenpenalty=999999		% nie dziel słów z myślnikiem
-\righthyphenmin=3			% dziel minimum 3 litery
-
-%\tolerance=4500
-%\pretolerance=250
-%\hfuzz=1.5pt
-%\hbadness=1450
+\clubpenalty=10000
+\widowpenalty=10000
+\brokenpenalty=10000
+\exhyphenpenalty=999999		
+\righthyphenmin=3			
 
 \renewcommand{\topfraction}{0.95}
 \renewcommand{\bottomfraction}{0.95}
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.35}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  Ustawienia rozmiarów: tekstu, nagłówka i stopki, marginesów
-%%  dla dokumentów klasy memoir 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\headsep}{10pt} 
-\setlength{\headheight}{13.6pt} % wartość baselineskip dla czcionki 11pt tj. \small wynosi 13.6pt
+\setlength{\headheight}{13.6pt} 
 \setlength{\footskip}{\headsep+\headheight}
 \setlength{\uppermargin}{\headheight+\headsep+1cm}
 \setlength{\textheight}{\paperheight-\uppermargin-\footskip-1.5cm}
@@ -92,48 +40,21 @@
 \setlength{\foremargin}{2.5cm}
 \setlength{\marginparsep}{2mm}
 \setlength{\marginparwidth}{2.3mm}
-%\settrimmedsize{297mm}{210mm}{*}
-%\settrims{0mm}{0mm}	
-\checkandfixthelayout[fixed] % konieczne, aby się dobrze wszystko poustawiało
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  Ustawienia odległości linii, wcięć, odstępów
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\linespread{1}
-%\linespread{1.241}
-\setlength{\parindent}{14.5pt}
-%\setbeforesecskip{10pt plus 0.5ex}%{-3.5ex \@plus -1ex \@minus -.2ex}
-%\setaftersecskip{10pt plus 0.5ex}%\onelineskip}
-%\setbeforesubsecskip{8pt plus 0.5ex}%{-3.5ex \@plus -1ex \@minus -.2ex}
-%\setaftersubsecskip{8pt plus 0.5ex}%\onelineskip}
-%\setlength\floatsep{6pt plus 2pt minus 2pt} 
-%\setlength\intextsep{12pt plus 2pt minus 2pt} 
-%\setlength\textfloatsep{12pt plus 2pt minus 2pt} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  Pakiety i komendy zastosowane tylko do zamieszczenia informacji o użytych komendach i fontach
-%%  Normalnie nie są potrzebne, można je zamarkować podczas redakcji pracy
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{memlays}     % extra layout diagrams, zastosowane w szblonie do 'debuggowania', używa pakietu layouts
-%\usepackage{layouts}
-\usepackage{printlen} % pakiet do wyświetlania wartości zdefiniowanych długości, stosowany do 'debuggowania'
+\checkandfixthelayout[fixed]
+
+
+\linespread{1}
+
+\setlength{\parindent}{14.5pt}
+
+\usepackage{memlays}
+\usepackage{printlen}
 \uselengthunit{pt}
 \makeatletter
-\newcommand{\showFontSize}{\f@size pt} % makro wypisujące wielkość bieżącej czcionki
+\newcommand{\showFontSize}{\f@size pt} 
 \makeatother
-% do pokazania ramek można byłoby użyć:
-%\usepackage{showframe} 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  Formatowanie list wyliczeniowych, wypunktowań i własnych otoczeń
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Domyślnie wypunktowania mają zadeklatorowane znaki, które nie występują w tgtermes
-% Aby latex nie podstawiał w ich miejsca znaków z czcionki standardowej można zrobić podstawienie:
-%    \DeclareTextCommandDefault{\textbullet}{\ensuremath{\bullet}}
-%    \DeclareTextCommandDefault{\textasteriskcentered}{\ensuremath{\ast}}
-%    \DeclareTextCommandDefault{\textperiodcentered}{\ensuremath{\cdot}}
-% Jednak jeszcze lepszym pomysłem jest zdefiniowanie otoczeń z wykorzystaniem enumitem
 \usepackage{enumitem} % pakiet pozwalający zarządzać formatowaniem list wyliczeniowych
 \setlist{noitemsep,topsep=4pt,parsep=0pt,partopsep=4pt,leftmargin=*} % zadeklarowane parametry pozwalają uzyskać 'zwartą' postać wypunktowania bądź wyliczenia
 \setenumerate{labelindent=0pt,itemindent=0pt,leftmargin=!,label=\arabic*.} % można zmienić \arabic na \alph, jeśli wyliczenia mają być z literkami
@@ -143,28 +64,6 @@
 \setlist[itemize,3]{label=$\ast$}
 \setlist[itemize,4]{label=$\cdot$}
 \renewlist{itemize}{itemize}{4}
-
-%%%http://tex.stackexchange.com/questions/29322/how-to-make-enumerate-items-align-at-left-margin
-%\renewenvironment{enumerate}
-%{
-%\begin{list}{\arabic{enumi}.}
-%{
-%\usecounter{enumi}
-%%\setlength{\itemindent}{0pt}
-%%\setlength{\leftmargin}{1.8em}%{2zw} % 
-%%\setlength{\rightmargin}{0zw} %
-%%\setlength{\labelsep}{1zw} %
-%%\setlength{\labelwidth}{3zw} % 
-%\setlength{\topsep}{6pt}%
-%\setlength{\partopsep}{0pt}%
-%\setlength{\parskip}{0pt}%
-%\setlength{\parsep}{0em} % 
-%\setlength{\itemsep}{0em} % 
-%%\setlength{\listparindent}{1zw} % 
-%}
-%}{
-%\end{list}
-%}
 
 \makeatletter
 \renewenvironment{quote}{
@@ -191,29 +90,10 @@
 \makeindex
 
 \makeatletter
-%%%\renewenvironment{theindex}
-							 %%%{\vskip 10pt\@makeschapterhead{\indexname}\vskip -3pt%
-								%%%\@mkboth{\MakeUppercase\indexname}%
-												%%%{\MakeUppercase\indexname}%
-								%%%\vspace{-3.2mm}\parindent\z@%
-								%%%\renewcommand\subitem{\par\hangindent 16\p@ \hspace*{0\p@}}%%
-								%%%\phantomsection%
-								%%%\begin{multicols}{2}
-								%%%%\thispagestyle{plain}
-								%%%\parindent\z@                
-								%%%%\parskip\z@ \@plus .3\p@\relax
-								%%%\let\item\@idxitem}
-							 %%%{\end{multicols}\clearpage}
-%%%
 \makeatother
 
 
 \usepackage{ifpdf}
-%\newif\ifpdf \ifx\pdfoutput\undefined
-%\pdffalse % we are not running PDFLaTeX
-%\else
-%\pdfoutput=1 % we are running PDFLaTeX
-%\pdftrue \fi
 \ifpdf
  \usepackage[pdftex,bookmarks,breaklinks,unicode]{hyperref}
  \usepackage[pdftex]{graphicx}
@@ -236,25 +116,6 @@
 \DeclareGraphicsExtensions{.eps,.ps,.jpg,.mps,.png}
 \fi
 \sloppy
-
-
-%\graphicspath{{rys01/}{rys02/}}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Metadane dla pdfa
-
-
-%\ifpdf
-%\pdfinfo{
-   %/Author (Nicola Talbot)
-   %/Title  (Creating a PDF document using PDFLaTeX)
-   %/CreationDate (D:20040502195600)
-   %/ModDate (D:\pdfdate)
-   %/Subject (PDFLaTeX)
-   %/Keywords (PDF;LaTeX)
-%}
-%\fi
 
 % Deklaracja głębokościu numeracji
 \setcounter{secnumdepth}{2}
@@ -514,16 +375,6 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \maketitle
 
 \newpage
-\thispagestyle{empty}
-\mbox{}\vfill
-\noindent\begin{tabular}{@{}ll} Opracował: & Amadeusz Janiszyn <249013@student.pwr.edu.pl>\\
- Data: & Grudzień 2021 
- \end{tabular}\\[15mm]
-\noindent\includegraphics[width=3cm]{by-nc-sa}\newline
-{\normalfont 
-Szablon jest udostępniany na licencji Creative Commons: \emph{Uznanie autorstwa -- Użycie niekomercyjne -- Na tych samych warunkach, 3.0 Polska}, Wrocław 2016. \\[2pt]
-Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywać do celów niekomercyjnych, a także tworzyć na ich podstawie utwory zależne pod warunkiem podania autora i~nazwy licencjodawcy oraz udzielania na utwory zależne takiej samej licencji. Tekst licencji jest dostępny pod adresem: \url{http://creativecommons.org/licenses/by-nc-sa/3.0/pl/}.}
-\newpage
 
 
 \chapterstyle{noNumbered}
@@ -549,8 +400,8 @@ Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywa�
 \include{rozdzial02}
 \include{rozdzial03}
 \include{rozdzial04}
-\include{rozdzial05}
-\include{rozdzial06}
+% \include{rozdzial05}
+% \include{rozdzial06}
 
 \newpage
 \mbox{}\pdfbookmark[0]{Spis rysunków}{spisRysunkow.1}

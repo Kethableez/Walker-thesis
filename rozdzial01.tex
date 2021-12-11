@@ -1,7 +1,16 @@
 \chapter{Wstęp}
-Globalny dostęp do Internetu spopularyzował rozpowszechnianie się aplikacji oraz serwisów internetowych. Obecnie coraz więcej przedsiębiorstw decyduje się na implementację swoich rozwiązań w takiej postaci. Zaletą takich rozwiązań są minimalne wymagania sprzętowe użytkownika - aplikacja stoi na zewnętrznym serwerze, który komunikuje się z klientem za pośrednictwem protokołu http, zatem od użytkownika wymagane jest urządzenie z dostępem do internetu.
+Globalny dostęp do internetu w szybkim tempie zaczyna wypierać technologie desktopowe na rzecz aplikacji internetowych. W związku z tym coraz więcej przedsiębiorstw decyduje się na taką implementację swoich rozwiązań oraz produktów.
 
-Zastosowanie aplikacji internetowych pozwala zatem dotrzeć z potencjalnym produktem do większej liczby konsumentów bez konieczności instalowania dodatkowego oprogramowania. Wystarczą urządzenia, które użytkujemy na co dzień -- od komputerów aż po smartfony.
+Zaletami aplikacji webowych są minimalne wymagania ze strony potencjalnego klienta oraz prostszy sposób implementacji. Od konsumenta wymagane jest jedynie urządzenie z dostępem do internetu. Taką aplikację można uruchomić na każdym urządzeniu codziennego użytku -- od komputerów stacjonarnych aż po urządzenia mobilne. Od strony implementacyjnej należy zapewnić serwer z zasobami pozwalającymi na komfortowe korzystanie z danego serwisu. Zasoby są ustalane na etapie analizy systemowej, a w trakcie rozwoju aplikacji, takie zasoby mogą być rozszerzane.
+
+% Zastosowanie rozwiązania webowego pozwala na dotrarcie z produktem do szerszej grupy konsumentów, co przyczynia się do zwięszenia zysków.
+W ciągu ostanich kilku lat znacząco zmieniło się podejście do tworzenia aplikacji internetowych. Jeszcze kilka lat temu dużą popularnością cieszyło się podejście do tworzenia aplikacji wielostronicowych (\textit{ang. MPA - Multi-Page application}). Oznacza to, że plik HTML był generowany po stronie backendu a następnie wysyłany do użytkownika. Takie podejście charateryzowało się ciągłą potrzebą przeładowywania strony. Obecnie w wyniku wzrostu popularności języka \textit{JavaScript}, pojawiło się niezliczona ilosć frameworków oferujących tworzenie aplikacji jednostronicowych (\textit{ang. SPA - Single-page application}). Cała logika stoi po stronie przeglądarki i na bieżąco aktualizuje swoją zawartość. Zaletą tego rozwiązania jest zrezygnowanie z widoku, generowaniego po stronie backendu co znacznie poprawia wydajność oraz szybkość aplikacji. Takie cechy serwisów są obecnie bardzo pożądane przez fakt wzrostu wymagań dotyczących pozytywnych doświadczeń użytkownika płynących z korzystania z aplikacji
+
+
+
+% Globalny dostęp do Internetu spopularyzował rozpowszechnianie się aplikacji oraz serwisów internetowych. Obecnie coraz więcej przedsiębiorstw decyduje się na implementację swoich rozwiązań w takiej postaci. Zaletą takich rozwiązań są minimalne wymagania sprzętowe użytkownika - aplikacja stoi na zewnętrznym serwerze, który komunikuje się z klientem za pośrednictwem protokołu http, zatem od użytkownika wymagane jest urządzenie z dostępem do internetu.
+
+% Zastosowanie aplikacji internetowych pozwala zatem dotrzeć z potencjalnym produktem do większej liczby konsumentów bez konieczności instalowania dodatkowego oprogramowania. Wystarczą urządzenia, które użytkujemy na co dzień -- od komputerów aż po smartfony.
 
 Obecnie dużą popularnością cieszy się podejście do tworzenia tzw. Single-Page Application. Czyli aplikacji, których głównym założeniem jest wysyłanie do użytkownika jednego pliku HTML, który na bieżąco podmienia swoją zawartość z poziomu przeglądarki. W trakcie korzystania z programów, strony internetowe nie są przeładowywane, co powoduje szybsze działanie aplikacji oraz pozytywnie wpływa na doświadczenia użytkowników. W przypadku starego podejścia, tzn Multi-Page Application, pliki były generowane na bieżąco po stronie serwera i wysyłane do przeglądarki co znacząco wydłużało czas ładowania strony.
 \section{Cel oraz zakres pracy}
@@ -9,7 +18,6 @@ Celem pracy jest zaprojektowanie i zaimplementowanie serwisu internetowego w opa
 
 Zakres pracy obejmuje stworzenie aplikacji przy użyciu języka Java do stworzenia serwera oraz aplikacji dostępowej stworzonej przy pomocy frameworka Angular. Serwis pobiera i zapisuje dane przy użyciu MongoDB -- nowoczesnej oraz nierelacyjnej bazie danych, która w ciągu ostatnich lat zdobywa coraz większą popularność. Wykorzystano również szereg narzędzi wspomagających i usprawniających tworzenie aplikacji.
 
-\newpage
 \section{Główne założenia projektowe}
 \begin{itemize}
     \item Właściciele dostają szereg funkcjonalności, pozwalających na stworzenie profilu zwierzaka oraz zaplanowanie spacerów z deklaracją godziny oraz miejsca spaceru. Możliwe jest również wystawianie opinii po spacerze w celu weryfikacji kompetencji opiekuna;
@@ -18,7 +26,7 @@ Zakres pracy obejmuje stworzenie aplikacji przy użyciu języka Java do stworzen
 \end{itemize}
 \section{Układ pracy}
 Praca została podzielona na niżej wymienione rozdziały:
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Część teoretyczna, opisuje dokładnie wykorzystane technologie, techniki oraz programy, które zostały wykorzystane przy implementacji pracy;
 
     \item Część implementacyjna, skupia się na szczegółach dotyczących implementacji aplikacji oraz zawiera opis funkcjonalny;

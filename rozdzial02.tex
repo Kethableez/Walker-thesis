@@ -1,10 +1,12 @@
 \chapter{Część teoretyczna}
 \section{Wprowadzenie do projektu}
-Genezą powstania serwisu internetowego jest fakt, że istnieje duża grupa osób z psami, które z różnych przyczyn nie mają czasu na regularne spacery ze swoim pupilem. Dodatkową funkcjonalnością oferowaną przez aplikację jest możliwość wyprowadzania potrzebujących psów na spacer jako opiekun. Jest to opcja przeznaczona dla osób, które lubią zajmować się zwierzętami i mają więcej wolnego czasu, niż opiekunowie.
+% Genezą powstania serwisu internetowego jest fakt, że istnieje duża grupa osób z psami, które z różnych przyczyn nie mają czasu na regularne spacery ze swoim pupilem. Dodatkową funkcjonalnością oferowaną przez aplikację jest możliwość wyprowadzania potrzebujących psów na spacer jako opiekun. Jest to opcja przeznaczona dla osób, które lubią zajmować się zwierzętami i mają więcej wolnego czasu, niż opiekunowie.
+Na powstanie omawianego w niniejszej pracy serwisu internetowego przyczyniły się dwa fakty. Pierwszym z nich jest fakt istnienia dużej grupy osób z psami, które z różnych przyczyn nie mają czasu na regularne spacery ze swoim pupilem. Oprócz tego można spotkać drugą grupę osób, które mają zamiłowanie do zajmowania się ze zwierzętami oraz czas i chęci, żeby zająć się innymi psami. 
 
+Głównym czynnikiem, który wpłyną na wybór oraz zastosowanie technologii internetowej była chęć autora do zapoznania się z popularnym wśród wielu firm, stosem technologicznym do tworzenia serwisów internetowych.
 \section{Proces projektowania i implementacji}
 Proces tworzenia aplikacji obejmował kilka etapów:
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Opracowanie wymagań funkcjonalnych oraz niefunkcjonalnych;
     \item Opracowanie widoków aplikacji;
     \item Opracowanie warstwy biznesowej po stronie backendu;
@@ -52,7 +54,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Rejestracja w serwisie. \\
 \textbf{Warunki wstępne:} Użytkownik niezalogowany, nieposiadający konta, wchodzący do serwisu po raz pierwszy.\\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w odnośnik \textit{...};
     \item Użytkownik zostaje przeniesiony do strony z formularzem rejestracyjnym;
     \item  Użytkownik wypełnia dane;
@@ -68,7 +70,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Logowanie do serwisu. \\
 \textbf{Warunki wstępne:} Użytkownik niezalogowany, posiadający konto w serwisie. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wypełnia formularz logowania;
     \item Użytkownik klika w przycisk \textit{Zaloguj się};
     \begin{itemize}
@@ -83,7 +85,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Zmiana zdjęcia profilowego. \\
 \textbf{Warunki wstępne:} Użytkownik zalogowany z aktywnym kontem. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę profil;
     \item Po najechaniu na zdjęcie profilowe klika w ikonę edycji;
     \item Użytkownik wgrywa nowe zdjęcie;
@@ -136,7 +138,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Dodanie profilu zwierzaka do serwisu. \\
 \textbf{Warunki wstępne:} Użytkownik zalogowany, z aktywnym kontem oraz rolą \textit{OWNER}. \\
 \textbf{Przebieg:}
-\begin{itemize} 
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Dodaj spacer};
     \item Użytkownik wypełnia formularz;
     \begin{itemize}
@@ -156,7 +158,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Dodanie terminu spaceru. \\
 \textbf{Warunki wstępne:} Użytkownik zalogowany, z aktywnym kontem oraz rolą \textit{OWNER}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Dodaj spacer};
     \item Użytkownik wypełnia formularz;
     \begin{itemize}
@@ -176,7 +178,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie historii spacerów. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{OWNER} lub \textit{SITTER}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Historia};
     \item Wyświetlana jest lista spacerów w przszłości;
 \end{itemize}
@@ -187,7 +189,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Dodanie komentarza do spaceru. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacerem w przeszłości. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Uzytkownik wchodzi w zakładkę \textit{Historia};
     \item Użytkownik wybiera spacer, który chce skomentować;
     \item Użytkownik wypełnia formularz;
@@ -208,7 +210,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Dodanie oceny opiekunowi. \\
 \textbf{Warunki wstępne:}  Zalogowany użytkownik z aktywnym kontem, rolą \textit{OWNER} oraz zakończonym spacerem w przeszłości. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Uzytkownik wchodzi w zakładkę \textit{Historia};
     \item Użytkownik wybiera spacer z opiekunem, którego chce ocenić;
     \item Użytkownik wypełnia formularz;
@@ -229,7 +231,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:}  Przeglądanie listy dostępnych spacerów. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{SITTER}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Spacery} z aktywnym widokiem wszystkich spacerów;
     \item Pobierana jest lista psów, bazująca na lokalizacji;
     \item Lista spacerów wyświetlana jest użytkownikowi;
@@ -242,12 +244,12 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacer dostępny w przyszłości z wolnym miejscem do zapisu. \\
 \textbf{Przebieg:}
 \textbf{Scenariusz A: Użytkownik znajduje się w zakładce \textit{Spacery}}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w przycisk \textit{Zapisz się};
     \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
 \textbf{Scenariusz B: Użytkownik znajduje się w profilu spaceru}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w przycisk \textit{Zapisz się};
     \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
@@ -259,12 +261,12 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz spacer w przyszłości na który użytkownik jest już zapisany. \\
 \textbf{Przebieg:}
 \textbf{Scenariusz A: Użytkownik znajduje się w zakładce \textit{Spacery}}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w przycisk \textit{Wypisz się};
     \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
 \textbf{Scenariusz B: Użytkownik znajduje się w profilu spaceru}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w przycisk \textit{Wypisz się};
     \item Użytkownik jest informowany stosownym komunikatem;
 \end{itemize}
@@ -275,7 +277,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie listy nadchodzących spacerów na które użytkownik jest zapisany. \\
 \textbf{Warunki wstępne:} Zalogowany uzytkownik z aktywnym kontem, rolą \textit{SITTER} oraz co najmniej jednym spacerem na który jest zapisany. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Uzytkownik wchodzi w zakładkę \textit{Spacery};
     \item Uzytkownik przełącza widok na \textit{Nadchodzące};
     \item Lista nadchodzących spacerów jest wyświetlana użytkownikowi;
@@ -287,7 +289,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie terminarza ze spacerami, na które użytkownik jest zapisany. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz rolą \textit{SITTER}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Terminarz};
     \item Uzytkownik może wybrać tryb wyświetlania;
     \begin{itemize}
@@ -302,7 +304,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie profilu użytkownka. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w odnośnik przekierowujący na profil innego użytkownika;
     \item Wyświetlają się szczegółowe informacje o użytkowniku;
 \end{itemize}
@@ -313,7 +315,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie profilu psa. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Uzytkownik klika w odnośnik przekierowujący na profil psa;
     \item Wyświetlają się szczegółowe informacje;
 \end{itemize}
@@ -324,7 +326,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie profilu spaceru. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w odnośnik przekierowujący na profil spaceru;
     \item Wyświetlają się szczegółowe informacje o spacerze;
 \end{itemize}
@@ -335,7 +337,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:}  Zalogowany użytkownik. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z aktywnym kontem oraz dowolną rolą. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik klika w ikonę błędu w prawym dolnym rogu;
     \item Użytkownik wypełnia formularz;
     \begin{itemize}
@@ -355,7 +357,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie bazy użytkowników. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Użytkownicy};
     \item Pojawia się lista wszystkich użytkowników zarejestrowanych w serwisie;
 \end{itemize}
@@ -366,7 +368,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie bazy spacerów. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Zwierzęta i spacery};
     \item Użytkownik wybiera widok spacerów;
     \item Pojawia się lista wszystkich spacerów dodanych w serwisie;
@@ -378,7 +380,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie bazy zwierząt. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Zwierzęta i spacery};
     \item Użytkownik wybiera widok zwierząt;
     \item Pojawia się lista wszystkich psów dodanych w serwisie;
@@ -390,7 +392,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie aktywności użytkowników. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN} . \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Uzytkownik wchodzi w zakładkę \textit{Aktywność};
     \item Pojawia się lista aktywności użytkowników na serwisie;
 \end{itemize}
@@ -401,7 +403,7 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie listy zgłoszonych błędów przez użytkowników. \\
 \textbf{Warunki wstępne:} Zalogowany użytkownik z rolą \textit{ADMIN}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik wchodzi w zakładkę \textit{Błędy};
     \item Pojawiają się lista błędów podzielona na 3 grupy -- nowe, w trakcie realizacji, naprawione;
 \end{itemize}
@@ -412,27 +414,33 @@ W pierwszym etapie projektowania serwisu został stworzony spis wymagań funkcjo
 \textbf{Opis:} Przeglądanie dashboardu. \\
 \textbf{Warunki wstępne:} Zalogowany uzytkownik z rolą \textit{OWNER} lub \textit{SITTER}. \\
 \textbf{Przebieg:}
-\begin{itemize}
+\begin{itemize}[leftmargin=1cm]
     \item Użytkownik znajduje się w zakładce dashboard;
     \item Pojawia się lista nadchodzących spacerów oraz powiadomień;
 \end{itemize}
 
 \section{Widoki, mockupy}
-Kluczowym elementem przy projektowaniu serwisów internetowych jest stworzenie prototypów widoków aplikacji. Ten zabieg znacząco ułatwia i przyspiesza pracę w etapie implementowania warstwy dostępowej. 
+Kluczowym elementem przy projektowaniu serwisów internetowych jest stworzenie prototypu aplikacji. Prototypowanie przyszłej aplikacji pozwala w krótszym czasie zaprojektować atrakcyjny wygląd, zgodny z technikami UI/UX (\textit{ang. User Interface / User Expirience}).
 
-Do stworzenia prototypów użyto oprogramowania \textit{Adobe XD}. Jest to popularne narzędzie do tworzenia interfejsów użytkownika. Program oferuje szereg narzędzi do projektowania wyglądu aplikacji. Zaletą używania programów, których przeznaczeniem jest kreowanie makiet aplikacji internetowych, jest zastosowanie właściwości dodawanych elementów znanych z arkuszy stylów takich, jak \textit{CSS} bądź \textit{SCSS}. Pozwala to w późniejszym czasie bezproblemowo przenosić zaprojektowane wyglądy do aplikacji frontendowej.
+W trakcie etapu projektowania zdecydowano się na użycie \textit{Adobe XD}. Jest to popularne narzędzie do prototypowania -- głównie na platformy internetowe oraz mobilne. Program pozwala na projektowanie makiet aplikacji poprzez wykorzystanie podstawowych kształtów oraz ich właściwości. Zaletą specjalistycznych narzędzi do prototypowania jest zastosowanie zbioru właściwości, które służą do nadawania poszczególnym elementom pożądanego wyglądu, znznych z często używanego narzędzia do stylizacji plików HTML -- kaskadowych arkuszy stylów. Takie rozwiązanie pozwala w błyskawiczny sposób przenieść prototypy do docelowego projektu.
+
+% Ten zabieg znacząco ułatwia i przyspiesza pracę w etapie implementowania warstwy dostępowej. 
+
+% Do stworzenia prototypów użyto oprogramowania \textit{Adobe XD}. Jest to popularne narzędzie do tworzenia interfejsów użytkownika. Program oferuje szereg narzędzi do projektowania wyglądu aplikacji. Zaletą używania programów, których przeznaczeniem jest kreowanie makiet aplikacji internetowych, jest zastosowanie właściwości dodawanych elementów znanych z arkuszy stylów takich, jak \textit{CSS} bądź \textit{SCSS}. Pozwala to w późniejszym czasie bezproblemowo przenosić zaprojektowane wyglądy do aplikacji frontendowej.
 \section{Backend}
 Każda aplikacja internetowa posiada swój silnik, który jest określany jako \textit{backend}. Jest to logika biznesowa, stojąca po stronie serwera. Odpowiada za pobieranie oraz przetwarzanie danych, komunikację z bazą danych oraz w większym stopniu za bezpieczeństwo całej aplikacji. Aplikacje backendowe udostępniają zbiór funkcjonalności, inaczej zwane REST API \textit{(ang. ...)}, które są wykorzystywane do transferu danych między zapleczem technicznym a warstwą dostępową aplikacji internetowej.
 
 W omawianej aplikacji do implementacji backendu wykorzystano język \textit{Java} - popularny język obiektowy oparty na klasach, charakteryzujący się kodem, który po kompilacji można uruchomić na każdej platformie. Niezbędny był również framework \textit{Spring Boot}, dzięki któremu możliwe było stworzenie rozbudowanego API aplikacji. Spring Boot jest narzędziem opartym o framework \textit{Spring}, zapewniającym dodatkową konfigurację oraz kontener aplikacji. Takie zastosowanie pozwala na szybsze tworzenie aplikacji bez konieczności dodatkowej konfiguracji. Użyty framework korzysta z mechanizmu wstrzykiwania zależności \textit{(ang. Dependency Injection)}. Dependency injection odpowiada za tworzenie i dostarczanie obiektów w odpowiednim momencie do danej klasy. Obecnie Java w połączeniu ze Spring Boot'em jest powszechnie używanym narzędziem wśród wielu firm na całym świecie. 
 
-Do tworzenia warstw biznesowych przy wykorzystaniu wyżej wymienionch narzędzi, niezbędnym elementem jest zbiór zależności. Pozwalają rozszerzyć bazowe funkcjonalności o nowe, skonkretyzowane metody i rozwiązania. W przypadku aplikacji, która jest tematem niniejszej pracy wykorzystano nastepujące zależności:\\
-\textbf{Spring Web} -- wprowadza do projektu podstawowe funkcje integracyjne, inicjalizuje kontener IoC, zorientowuje kontekst aplikacji na sieć oraz dodaje klienta HTTP.\\
-\textbf{Spring Security} -- konfigurowalna platforma zapewniająca kontrolę nad dostępem do aplikacji. Stanowi standard zabezpieczeń oraz pozwala na uwierystelnianie użytkowników.\\
-\textbf{JSON Web Token} -- popularne rozwiązanie do uwierzytelniania użytkowników. Wykorzystywany jako token autoryzacyjny, generowany po stronie backendu i przechowywany po stronie frontendu, umożliwia na dostęp do zasobów API aplikacji.\\
-\textbf{MongoDB Driver} -- zależność umożliwiająca skonfigurowanie aplikacji z bazą danych. Udostępnia szereg metod umożliwiający wykonywanie operacji z przetwarzaniem danych w bazie.\\
-\textbf{SwaggerUI} -- dostarcza wizualną reprezentację oraz dostęp do punktów końcowych \textit{(ang. endpoint)} aplikacji. Umożliwia na testowanie zaimplementowanych funkcjonalności bezpośrednio po stronie backendu.\\
-\textbf{Lombok} -- jest procesorem adnotacji, umożiwiającym na generowanie kodu przed kompilacją po zastosowaniu odpowiedniej adnotacji nad klasą. Wykorzystywany jest przy obiektach do generowania powtarzalnych metod takich jak konstuktory, gettery oraz settery.\\
+Do tworzenia warstw biznesowych przy wykorzystaniu wyżej wymienionch narzędzi, niezbędnym elementem jest zbiór zależności. Pozwalają rozszerzyć bazowe funkcjonalności o nowe, skonkretyzowane metody i rozwiązania. W przypadku aplikacji, która jest tematem niniejszej pracy wykorzystano nastepujące zależności:
+\begin{itemize}[leftmargin=1cm]
+    \item \textbf{Spring Web} -- wprowadza do projektu podstawowe funkcje integracyjne, inicjalizuje kontener IoC, zorientowuje kontekst aplikacji na sieć oraz dodaje klienta HTTP.
+    \item \textbf{Spring Security} -- konfigurowalna platforma zapewniająca kontrolę nad dostępem do aplikacji. Stanowi standard zabezpieczeń oraz pozwala na uwierystelnianie użytkowników.
+    \item \textbf{JSON Web Token} -- popularne rozwiązanie do uwierzytelniania użytkowników. Wykorzystywany jako token autoryzacyjny, generowany po stronie backendu i przechowywany po stronie frontendu, umożliwia na dostęp do zasobów API aplikacji.
+    \item \textbf{MongoDB Driver} -- zależność umożliwiająca skonfigurowanie aplikacji z bazą danych. Udostępnia szereg metod umożliwiający wykonywanie operacji z przetwarzaniem danych w bazie.
+    \item \textbf{SwaggerUI} -- dostarcza wizualną reprezentację oraz dostęp do punktów końcowych \textit{(ang. endpoint)} aplikacji. Umożliwia na testowanie zaimplementowanych funkcjonalności bezpośrednio po stronie backendu.
+    \item \textbf{Lombok} -- jest procesorem adnotacji, umożiwiającym na generowanie kodu przed kompilacją po zastosowaniu odpowiedniej adnotacji nad klasą. Wykorzystywany jest przy obiektach do generowania powtarzalnych metod takich jak konstuktory, gettery oraz settery.
+\end{itemize}
 
 W trakcie implementacji technicznej strony aplikacji niezbednym etapem jest wybór bazy danych dla serwisu. Obecnie od wielu lat wykorzystywane są relacyjne bazy danych. Jednak w ciągu ostatnich lat można zauważyć rosnącą popularność baz nierelacyjnych. Wśród nich w czołówce plasuje się MongoDB. Charakterystycznymi cechami omawianej bazy danych jest zrezygnowanie z relacji między kolekcjami, operacja na dokumentach oraz przechowywanie danych w formacie BSON - jest to format JSON w postaci binarnej. Mongo, tak jak wiele innych baz NoSQL nie posiada żadnych reguł implementacyjnych co pozwala na dowolność w kwestii przechowywania danych. Jest to również nowoczesne podejście do modelowania baz danych. Dlatego też zdecydowano się na zastosowanie MongoDB jako bazy danych dla omawianej aplikacji.
 
@@ -456,11 +464,13 @@ Java jest wysokopoziomowym, obiektowym językiem, często stosowanym przez firmy
 \section{Frontend}
 Do komunikacji między użytkownikami a backendem używa się warstw dostępowych, znanych również w środowisku programistycznym jako frontend. Frontend służy do odbierania danych od użytkowników, przetwarzania ich do dopowiedniego formatu, wymaganego przez API oraz wysyłanie danych do backendu. W obecnych czasach dużą popularnością cieszą sie frameworki oparte na języku JavaScript - języku skryptowym który umożliwia wprowadzenie funkcjonalności do plików HTML. Takie frameworki pozwalają na tworzenie aplikacji w technice SPA.
 
-Frontend został zaimplementowany przy wykorzystaniu frameworka \textit{Angular}, który obecnie znajduje się w czołówce popularności. Pozwala na tworzenie wydajnych aplikacji SPA. Charakterystyczną cechą omawianego frameworka jest wykorzystanie komponentów -- mogą być składowymi lub definiować całe widoki z dołączoną logką do obsługi danych. Angular wykorzystuje również mechanizm dependency injection, który jest niezbędny do tworzenia modułowych komponentów, które można wielokrotnie używać. Znaczącą rolę w działaniu aplikacji pełnią moduły. Są to zarówno zewnętrzne biblioteki, posiadające szereg rozwiązań implementacyjnych oraz komponenty tworzone przez programistę. W trakcie implementaji warstwy dostępowej zastosowano zbiór zewnętrznych modułów oraz bibliotek, zapewniających prawidłowe działanie aplikacji.\\
-\textbf{BrowserModule} -- odpowiada za uruchamianie aplikacji w przeglądarce.\\
-\textbf{AppRoutingModule} -- dodaje możliwość nawigacji z uwzględnieniem odpowiednich adresów URL.\\
-\textbf{ReactiveFormsModule} -- odpowiada za tworzenie reaktywnych formularzy.\\
-\textbf{HttpClientModule} -- pozwala na komunikację poprzez protoków HTTP z API.\\
-\textbf{RxJS} -- biblioteka wprowadzająca możliwość programowania reaktywnego w aplikacji.\\
+Frontend został zaimplementowany przy wykorzystaniu frameworka \textit{Angular}, który obecnie znajduje się w czołówce popularności. Pozwala na tworzenie wydajnych aplikacji SPA. Charakterystyczną cechą omawianego frameworka jest wykorzystanie komponentów -- mogą być składowymi lub definiować całe widoki z dołączoną logką do obsługi danych. Angular wykorzystuje również mechanizm dependency injection, który jest niezbędny do tworzenia modułowych komponentów, które można wielokrotnie używać. Znaczącą rolę w działaniu aplikacji pełnią moduły. Są to zarówno zewnętrzne biblioteki, posiadające szereg rozwiązań implementacyjnych oraz komponenty tworzone przez programistę. W trakcie implementaji warstwy dostępowej zastosowano zbiór zewnętrznych modułów oraz bibliotek, zapewniających prawidłowe działanie aplikacji.
+\begin{itemize}[leftmargin=1cm]
+    \item \textbf{BrowserModule} -- odpowiada za uruchamianie aplikacji w przeglądarce.
+    \item \textbf{AppRoutingModule} -- dodaje możliwość nawigacji z uwzględnieniem odpowiednich adresów URL.
+    \item \textbf{ReactiveFormsModule} -- odpowiada za tworzenie reaktywnych formularzy.
+    \item \textbf{HttpClientModule} -- pozwala na komunikację poprzez protoków HTTP z API.
+    \item \textbf{RxJS} -- biblioteka wprowadzająca możliwość programowania reaktywnego w aplikacji.
+\end{itemize}
 
 Doświadczenia wizualne płynące z korzystania z serwisów internetowych są w obecnych czasach niezwykle istotne -- można by założyć że atrakcyjność wyglądu góruje nad funkcjonalnościami aplikacji. Dlatego też bardzo ważnym elementem przy tworzeniu frontendowych aplikacji jest zadbanie o odpowiedni wygląd aplikacji poprzed dołożenie do projektu arkuszy stylów. Najpopularniejszym i najczęściej używanym obecnie jest \textit{CSS}. Pozwala w prosty sposób tworzyć selektory klas i stylizować poszczególne elementy składające się na cały widok. W trakcie implementacji makiet widoków zdecydowano się na użycie bardziej rozbudowanego narzędzia do tworzenia arkuszy stylów -- \textit{SCSS}. Posiada ten sam zbiór właściwości które można stylizować, natomiast rozszerza bazową wersję o możliwość definiowania zmiennych oraz tworzenie zagnieżdżonych selektorów. Takie dodatkowe funkcjonalności pozwalają tworzyć mniej rozbudowane, prostsze arkusze stylów, które w znaczący sposób są podatne na późniejsze modyfikacje.
