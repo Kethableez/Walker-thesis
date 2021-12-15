@@ -11,6 +11,7 @@
 %\DisemulatePackage{setspace}
 \usepackage{setspace}
 \usepackage{tabularx}
+\usepackage{float}
 \usepackage{color,calc}
 \usepackage{ebgaramond}
 \usepackage{tgtermes}   
@@ -19,6 +20,29 @@
 \lstset{literate=%-
 {ą}{{\k{a}}}1 {ć}{{\'c}}1 {ę}{{\k{e}}}1 {ł}{{\l{}}}1 {ń}{{\'n}}1 {ó}{{\'o}}1 {ś}{{\'s}}1 {ż}{{\.z}}1 {ź}{{\'z}}1 {Ą}{{\k{A}}}1 {Ć}{{\'C}}1 {Ę}{{\k{E}}}1 {Ł}{{\L{}}}1 {Ń}{{\'N}}1 {Ó}{{\'O}}1 {Ś}{{\'S}}1 {Ż}{{\.Z}}1 {Ź}{{\'Z}}1 }%{\ \ }{{\ }}1}
 
+\usepackage{inconsolata}
+
+\usepackage{color}
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\lstset{ 
+	language=Java,
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+commentstyle=\color{pgreen},
+keywordstyle=\color{pblue},
+stringstyle=\color{pred},
+basicstyle=\ttfamily,
+moredelim=[il][\textcolor{pgrey}]{$$},
+moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
 \clubpenalty=10000
 \widowpenalty=10000
 \brokenpenalty=10000
@@ -408,10 +432,10 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 %\addcontentsline{toc}{chapter}{Spis rysunków}
 \listoffigures*
 
-\newpage
-\mbox{}\pdfbookmark[0]{Spis tabel}{spisTabel.1}
-%\addcontentsline{toc}{chapter}{Spis tabel}
-\listoftables*
+% \newpage
+% \mbox{}\pdfbookmark[0]{Spis tabel}{spisTabel.1}
+% %\addcontentsline{toc}{chapter}{Spis tabel}
+% \listoftables*
 
 %\bibliographystyle{plalpha}
 \bibliographystyle{plabbrv}
@@ -422,7 +446,6 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \bibliography{dokumentacja}
 \appendix
 \include{dodatekA}
-\include{dodatekB}
 
 \chapterstyle{noNumbered}
 \phantomsection % sets an anchor
