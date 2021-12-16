@@ -16,33 +16,50 @@
 \usepackage{ebgaramond}
 \usepackage{tgtermes}   
 \renewcommand*\ttdefault{txtt}
-\usepackage{listings} % pakiet do prezentacji kodu. 
+% \usepackage{listings} % pakiet do prezentacji kodu. 
+\usepackage{caption}
+\usepackage{listings, xcolor}
 \lstset{literate=%-
 {ą}{{\k{a}}}1 {ć}{{\'c}}1 {ę}{{\k{e}}}1 {ł}{{\l{}}}1 {ń}{{\'n}}1 {ó}{{\'o}}1 {ś}{{\'s}}1 {ż}{{\.z}}1 {ź}{{\'z}}1 {Ą}{{\k{A}}}1 {Ć}{{\'C}}1 {Ę}{{\k{E}}}1 {Ł}{{\L{}}}1 {Ń}{{\'N}}1 {Ó}{{\'O}}1 {Ś}{{\'S}}1 {Ż}{{\.Z}}1 {Ź}{{\'Z}}1 }%{\ \ }{{\ }}1}
 
+\lstset{
+tabsize = 4, %% set tab space width
+basicstyle=\footnotesize\ttfamily,
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+morekeywords={  abstract, event, new, struct,
+                as, explicit, null, switch,
+                base, extern, object, this,
+                bool, false, operator, throw,
+                break, finally, out, true,
+                byte, fixed, override, try,
+                case, float, params, typeof,
+                catch, for, private, uint,
+                char, foreach, protected, ulong,
+                checked, goto, public, unchecked,
+                class, if, readonly, unsafe,
+                const, implicit, ref, ushort,
+                continue, in, return, using,
+                decimal, int, sbyte, virtual,
+                default, interface, sealed, volatile,
+                delegate, internal, short, void,
+                do, is, sizeof, while,
+                double, lock, stackalloc,
+                else, long, static,
+                enum, namespace, string},
+}
+
 \usepackage{inconsolata}
 
-\usepackage{color}
 
-\definecolor{pblue}{rgb}{0.13,0.13,1}
-\definecolor{pgreen}{rgb}{0,0.5,0}
-\definecolor{pred}{rgb}{0.9,0,0}
-\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
 
-\lstset{ 
-	language=Java,
-showspaces=false,
-showtabs=false,
-breaklines=true,
-showstringspaces=false,
-breakatwhitespace=true,
-commentstyle=\color{pgreen},
-keywordstyle=\color{pblue},
-stringstyle=\color{pred},
-basicstyle=\ttfamily,
-moredelim=[il][\textcolor{pgrey}]{$$},
-moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
-}
 \clubpenalty=10000
 \widowpenalty=10000
 \brokenpenalty=10000
@@ -404,7 +421,7 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \chapterstyle{noNumbered}
 \pagestyle{outer}
 \mbox{}\pdfbookmark[0]{Spis treści}{spisTresci.1}
-\tableofcontents* 
+\tableofcontents*
 
 
 \begin{flushleft}

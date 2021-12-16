@@ -82,12 +82,18 @@ Paleta kolorów taka i taka, z tego i tamtego zdjęcia
 
 \newpage
 \section{Java -- serce aplikacji}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\linewidth]{rysunki/props.PNG}
-  \caption{XYZ}
-  \label{fig:xyz}
-\end{figure}
+\begin{lstlisting}
+spring.data.mongodb.database=walker
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+
+jwtSecret=a43b97a5-4d2a-47bc-b74f-e677ebed35db
+jwtExpiration=3600000
+
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+spring.servlet.multipart.enabled=true
+\end{lstlisting}
 
 \subsection{Architektura projektu}
 Do zachowania porządku w projekcie zdecydowano się na zastosowanie odpowiedniej architektury projektu.
@@ -167,6 +173,7 @@ W folderach głównych znajdują się podfoldery odpowiedzialne za przechowywani
 
 \subsection{Implementacja wyszukiwania po lokalizacji}
 w headerze przesyłany distCode a w backendzie filtrowana lista spacerów
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\linewidth]{rysunki/save.PNG}
@@ -200,8 +207,63 @@ w headerze przesyłany distCode a w backendzie filtrowana lista spacerów
   \label{fig:xyz}
 \end{figure}
 
+\subsection{Działanie}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-1.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-2.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-3.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-4.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-5.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-7.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{rysunki/walker-8.PNG}
+  \caption{Strona startowa}
+  \label{fig:walker-landing-page}
+\end{figure}
+
+
 \subsection{JWT -- Autoryzacja i autentykacja}
 
 \subsection{Biblioteki i moduły}
+\begin{lstlisting}
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgbModule
+  ]
+\end{lstlisting}
 
 \subsection{Konfiguracja projektu}
